@@ -1,2 +1,2 @@
 # hospital
-python
+this is a project for hospital management

@@ -41,7 +41,6 @@ tht3='''
 tht4=''' 
                       THE EXPERT IN ANYTHING WAS ONCE A BEGINNER
                      --------------------------------------------
-
 '''
 tht5='''
                       NOT ALL STORMS COME TO DISRUPT YOUR LIFE
@@ -125,7 +124,13 @@ while True:
             else:
                 print(" ~!~!~!~~12 digits required~~!~!~!~")
                
-        name=input("Patient name:")
+        while True:
+            name=input("Patient name:")
+            if name.isalpha==False:
+                print("~!~!~!~~name should be character~~!~!~!~")
+            else:
+                break
+
         while True:
             age=int(input("Age:"))
             if type(age)!=int:
